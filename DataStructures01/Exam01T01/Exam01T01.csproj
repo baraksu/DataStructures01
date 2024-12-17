@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5CDF39B5-3A5F-4F34-B29C-E3F3F44FFFA0}</ProjectGuid>
+    <ProjectGuid>{7B206B86-B2F8-4D93-9481-B5236DABB606}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ch01_Recursion</RootNamespace>
-    <AssemblyName>Ch01_Recursion</AssemblyName>
+    <RootNamespace>Exam01T01</RootNamespace>
+    <AssemblyName>Exam01T01</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,9 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Book\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

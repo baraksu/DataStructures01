@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5CDF39B5-3A5F-4F34-B29C-E3F3F44FFFA0}</ProjectGuid>
+    <ProjectGuid>{DC537693-9571-4754-9861-E43ADC35022A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ch01_Recursion</RootNamespace>
-    <AssemblyName>Ch01_Recursion</AssemblyName>
+    <RootNamespace>ClassTest01</RootNamespace>
+    <AssemblyName>ClassTest01</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -41,16 +41,22 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="Unit4">
+      <HintPath>..\Infra\Unit4.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Q02.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Book\" />
+    <ProjectReference Include="..\Infra\Infra.csproj">
+      <Project>{bb2ec606-b180-4992-b3a0-95c3954e2f93}</Project>
+      <Name>Infra</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
