@@ -8,7 +8,7 @@ using Unit4.CollectionsLib;
 namespace ClassTestTests
 {
     [TestClass]
-    public class UnitTest1
+    public class ClassTest01Tests
     {
         [TestMethod]
         public void Sod2_01()

@@ -85,6 +85,37 @@ namespace Queue01
             return Q02_Equal_Rec(q1, q2);
         }
 
+        public static bool Q01_ExistSequence<T>(Queue<T> q, T item)
+        {
+            int count =0;
+            Queue<T> temp = new Queue<T>();
+
+            while (!q.IsEmpty() && count < 2)
+            {
+                if (q.Head().Equals(item))
+                {
+                    count += 1;
+                }
+                else
+                {
+                    count = 0;
+                }
+                temp.Insert(q.Remove());
+            }
+
+            while (!q.IsEmpty())
+            {
+                temp.Insert(q.Remove());
+            }
+
+            while (!temp.IsEmpty())
+            {
+                q.Insert(temp.Remove());
+            }
+
+            return count >= 2;
+        }
+
 
 
 

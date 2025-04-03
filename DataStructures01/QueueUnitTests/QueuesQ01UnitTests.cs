@@ -9,71 +9,47 @@ namespace QueueUnitTests
     public class QueuesQ01UnitTests
     {
         [TestMethod]
-        public void Q02_EmptyQueues()
+        public void Q01_OneItem()
         {
-            Assert.IsTrue(Chapter05.Q02_Equal_It<bool>(null, null));
-            Assert.IsFalse(Chapter05.Q02_Equal_It<bool>(null, new Queue<bool>()));
-            Assert.IsFalse(Chapter05.Q02_Equal_It<bool>(new Queue<bool>(),null));
+            Queue<int> q  = new Queue<int>();
+            q.Insert(1);
 
-        } 
-        [TestMethod]
-        public void Q02_FullEqualQueues()
-        {
-            var q1 = new Queue<int>();
-            var q2 = new Queue<int>();
-
-            q1.Insert(5);
-            q2.Insert(5);
+            bool r = Chapter05.Q01_ExistSequence(q, 1);
+            Assert.IsFalse(r);
                 
-            Assert.IsTrue(Chapter05.Q02_Equal_It(q1,q2));
-
         }
         [TestMethod]
-        public void Q02_OneIsBiggerQueues()
+        public void Q01_TwoItems()
         {
-            var q1 = new Queue<int>();
-            var q2 = new Queue<int>();
+            Queue<int> q = new Queue<int>();
+            q.Insert(1);
+            q.Insert(1);
 
-            q1.Insert(5);
-            q2.Insert(5);
-            q2.Insert(6);
-
-            Assert.IsFalse(Chapter05.Q02_Equal_It(q1, q2));
-
-        }
-        
-        [TestMethod]
-        public void Q02_EmptyQueuesRecursive()
-        {
-            Assert.IsTrue(Chapter05.Q02_Equal_BeforeRecursive<bool>(null, null));
-            Assert.IsFalse(Chapter05.Q02_Equal_BeforeRecursive<bool>(null, new Queue<bool>()));
-            Assert.IsFalse(Chapter05.Q02_Equal_BeforeRecursive<bool>(new Queue<bool>(),null));
-
-        } 
-        [TestMethod]
-        public void Q02_FullEqualQueuesRecursive()
-        {
-            var q1 = new Queue<int>();
-            var q2 = new Queue<int>();
-
-            q1.Insert(5);
-            q2.Insert(5);
-                
-            Assert.IsTrue(Chapter05.Q02_Equal_BeforeRecursive(q1,q2));
-
+            bool r = Chapter05.Q01_ExistSequence(q, 1);
+            Assert.IsTrue(r);
         }
         [TestMethod]
-        public void Q02_OneIsBiggerQueuesRecursive()
+        public void Q01_TwoItemsNotInSeq()
         {
-            var q1 = new Queue<int>();
-            var q2 = new Queue<int>();
+            Queue<int> q = new Queue<int>();
+            q.Insert(1);
+            q.Insert(2);
+            q.Insert(1);
 
-            q1.Insert(5);
-            q2.Insert(5);
-            q2.Insert(6);
-
-            Assert.IsFalse(Chapter05.Q02_Equal_BeforeRecursive(q1, q2));
-
+            bool r = Chapter05.Q01_ExistSequence(q, 1);
+            Assert.IsFalse(r);
         }
+        [TestMethod]
+        public void Q01_TwoItemsAfterFirstInSeq()
+        {
+            Queue<int> q = new Queue<int>();
+            q.Insert(2);
+            q.Insert(1);
+            q.Insert(1);
+
+            bool r = Chapter05.Q01_ExistSequence(q, 1);
+            Assert.IsTrue(r);
+        }
+
     }
 }

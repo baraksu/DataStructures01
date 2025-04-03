@@ -52,7 +52,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ClassTest01Tests.cs" />
+    <Compile Include="ClassTest02Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +63,10 @@
     <ProjectReference Include="..\ClassTest01\ClassTest01.csproj">
       <Project>{dc537693-9571-4754-9861-e43adc35022a}</Project>
       <Name>ClassTest01</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClassTest02\ClassTest02.csproj">
+      <Project>{084be1a4-9938-4656-bcb7-764c6a29a893}</Project>
+      <Name>ClassTest02</Name>
     </ProjectReference>
     <ProjectReference Include="..\Infra\Infra.csproj">
       <Project>{BB2EC606-B180-4992-B3A0-95C3954E2F93}</Project>
