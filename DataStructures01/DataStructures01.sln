@@ -27,6 +27,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassTest02", "ClassTest02\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch06Trees", "Ch06Trees\Ch06Trees.csproj", "{27F2E63B-4121-4076-B4AE-2CD0D0CEABD7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddRemoveList", "AddRemoveList", "{F3E12110-8A00-4109-BDF1-279D848CE2AC}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Downloads\הסרה והוספה לרשימה.pdf = ..\..\..\..\..\Downloads\הסרה והוספה לרשימה.pdf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch03_AddRemoveList", "Ch03_AddRemoveList\Ch03_AddRemoveList.csproj", "{9E3B70E5-1E36-4FF5-B737-E6EDF71F71D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Matkonet", "Matkonet", "{4F4A627A-73DA-4E2B-AF55-6BA6A735D7E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matkonet01", "Matkonet01\Matkonet01.csproj", "{2513DD56-CAAC-4297-83C6-591540112C90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +88,14 @@ Global
 		{27F2E63B-4121-4076-B4AE-2CD0D0CEABD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F2E63B-4121-4076-B4AE-2CD0D0CEABD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27F2E63B-4121-4076-B4AE-2CD0D0CEABD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3B70E5-1E36-4FF5-B737-E6EDF71F71D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3B70E5-1E36-4FF5-B737-E6EDF71F71D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3B70E5-1E36-4FF5-B737-E6EDF71F71D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3B70E5-1E36-4FF5-B737-E6EDF71F71D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2513DD56-CAAC-4297-83C6-591540112C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2513DD56-CAAC-4297-83C6-591540112C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2513DD56-CAAC-4297-83C6-591540112C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2513DD56-CAAC-4297-83C6-591540112C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +103,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7B206B86-B2F8-4D93-9481-B5236DABB606} = {A5AE6CA9-884C-451B-AA97-B53F39E68313}
 		{8AFEC631-21CF-4F5B-9E25-F8A57B28A4CC} = {A5AE6CA9-884C-451B-AA97-B53F39E68313}
+		{9E3B70E5-1E36-4FF5-B737-E6EDF71F71D8} = {F3E12110-8A00-4109-BDF1-279D848CE2AC}
+		{2513DD56-CAAC-4297-83C6-591540112C90} = {4F4A627A-73DA-4E2B-AF55-6BA6A735D7E6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1354684B-7DDF-4406-AE08-4D4F688442E4}

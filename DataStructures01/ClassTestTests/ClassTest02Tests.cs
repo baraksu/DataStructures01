@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClassTest02;
+using Infra;
 using Unit4.CollectionsLib;
 
 namespace ClassTestTests
@@ -23,11 +24,11 @@ namespace ClassTestTests
                 new Node<char>('j'))))));
 
             Console.WriteLine("lst");
-            Infra.Helper.PrintList(lst);
+            NodeHelpter.PrintList(lst);
             Node<char> newList = ClassTest02Q01.GetMiddleChars(lst);
             Console.WriteLine("");
             Console.WriteLine("newLst");
-            Infra.Helper.PrintList(newList);
+            NodeHelpter.PrintList(newList);
             Assert.IsTrue(newList!=null);
 
 

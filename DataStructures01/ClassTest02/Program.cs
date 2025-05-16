@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Infra;
+using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +19,11 @@ namespace ClassTest02
                                 new Node<char>('j'))))));
 
             Console.WriteLine("lst");
-            Infra.Helper.PrintList(lst);
+            NodeHelpter.PrintList(lst);
             Console.WriteLine("");
             Node<char> newList = ClassTest02Q01.GetMiddleChars(lst);
             Console.WriteLine("newLst");
-            Infra.Helper.PrintList(newList);
+            NodeHelpter.PrintList(newList);
             Console.ReadKey();
 
         }

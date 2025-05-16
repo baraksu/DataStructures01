@@ -273,8 +273,8 @@ namespace Queue01
             if (q1.IsEmpty() || q2.IsEmpty())
                 return false;
 
-            Queue<T> tmp1 = Infra.Helper.Clone(q1);
-            Queue<T> tmp2 = Infra.Helper.Clone(q2);
+            Queue<T> tmp1 = Infra.QueueHelper.Clone(q1);
+            Queue<T> tmp2 = Infra.QueueHelper.Clone(q2);
 
 
             while (!tmp1.IsEmpty() && !tmp2.IsEmpty())
@@ -299,8 +299,8 @@ namespace Queue01
             if (q1 == null || q2 == null)
                 return false;
 
-            Queue<T> tmp1 = Infra.Helper.Clone(q1);
-            Queue<T> tmp2 = Infra.Helper.Clone(q2);
+            Queue<T> tmp1 = Infra.QueueHelper.Clone(q1);
+            Queue<T> tmp2 = Infra.QueueHelper.Clone(q2);
 
             bool result = Q02_Equal_Rec(tmp1, tmp2);
 

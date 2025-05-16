@@ -3,9 +3,9 @@ using Unit4.CollectionsLib;
 
 namespace Infra
 {
-    public static class Helper
+    public class NodeHelpter
     {
-        public static void PrintList<T>(this Node<T> lst)
+        public static void PrintList<T>(Node<T> lst)
         {
             Node<T> p = lst;
             while (p != null)
